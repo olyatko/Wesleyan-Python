@@ -146,9 +146,12 @@ import random
 
 def problem2_4():
     """ Make a list of 10 random reals between 30 and 35 """
-    random.seed()
-    pass # replace this pass (a do-nothing) statement with your code
-
+    random.seed(70)
+    rand_lis = []
+    for i in range (10):
+        rand_lis.append(random.random() * 5 + 30)
+    print (rand_lis)
+    
 #%%
 """
 COMMENT: Note that this uses a pseudorandom number generator.  That means
@@ -201,7 +204,8 @@ def problem2_5():
     # Setting the seed makes the random numbers always the same
     # This is to make the auto-grader's job easier.
     random.seed(171)  # don't remove when you submit for grading
-    pass # replace this pass (a do-nothing) statement with your code
+    for i in range (10):
+      print (random.randint(1,6))
 
 #%%
 """
@@ -220,8 +224,8 @@ def problem2_6():
     # Setting the seed makes the random numbers always the same
     # This is to make the auto-grader's job easier.
     random.seed(431)  # don't remove when you submit for grading
-    pass # replace this pass (a do-nothing) statement with your code
-
+    for i in range (100):
+      print (random.randint(1,6) + random.randint(1,6))
    
 #%%
 """
